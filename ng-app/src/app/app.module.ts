@@ -22,6 +22,7 @@ import {CourseRoutingModule} from './course/course-routing.module';
 import {LoginComponent} from './login/login.component';
 import {AuthenticationService} from './service/authentication.service';
 import {SaimaiComponent} from "./students/saimai/saimai.component";
+import {SelectModule} from 'ng2-select';
 
 @NgModule({
   declarations: [AppComponent,
@@ -37,7 +38,8 @@ import {SaimaiComponent} from "./students/saimai/saimai.component";
     SaimaiComponent
   ],
   imports: [BrowserModule, FormsModule, HttpModule,
-    StudentRoutingModule, CourseRoutingModule,AppRoutingModule],
+    StudentRoutingModule, CourseRoutingModule,AppRoutingModule,
+    SelectModule],
   bootstrap: [AppComponent],
   providers: [{provide: StudentsDataService, useClass: StudentsDataServerService},
     // {provide: LocationStrategy, useClass: HashLocationStrategy},

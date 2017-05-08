@@ -9,7 +9,7 @@ const appRoutes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/list',
+    redirectTo: '/saimai',
     pathMatch: 'full'
   },
   {path: '**', component: FileNotFoundComponent},
